@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Please Add Allow-CORS plugin to the Browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
