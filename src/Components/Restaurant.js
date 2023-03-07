@@ -13,7 +13,7 @@ const Restaurant = () => {
       <div className="m-2 text-2xl">Menu</div>
 
       <ul className="flex flex-wrap">
-        {restaurant?.menu?.items ?
+        {restaurant?.menu?.items ? (
           Object.values(restaurant?.menu?.items).map((item) => (
             <li
               key={item?.id}
@@ -28,7 +28,10 @@ const Restaurant = () => {
               {item?.name}
               <div className="text-sm">{item?.category}</div>
             </li>
-          )): <Shimmer/>}
+          ))
+        ) : (
+          <Shimmer />
+        )}
       </ul>
     </div>
   );

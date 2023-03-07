@@ -93,8 +93,6 @@ const Dashboard = () => {
     </div>
   );
 
-
-
   const RestrauntCard = ({ id, name, cuisines, cloudinaryImageId }) => {
     return (
       <div className="w-128 bg-white m-2 shadow-slate-800 p-2 relative">

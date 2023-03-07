@@ -3,15 +3,13 @@ import Header from "../Components/Header";
 import { Provider } from "react-redux";
 import store from "../utils/store";
 
-
 const AppLayout = () => {
+  return (
+    <Provider store={store}>
+      <Header />
+      <Outlet />
+    </Provider>
+  );
+};
 
-    return (
-      <Provider store={store}>
-        <Header />
-      <Outlet/>
-      </Provider>
-    );
-  };
-
-  export default AppLayout;
+export default AppLayout;
